@@ -61,7 +61,7 @@
             </li>
           </ul>
         </address>
-        <button class="header-burger-btn" type="button">
+        <button class="header-burger-btn js-open-menu" type="button">
           <svg width="24" height="24">
             <use href="images/icons.svg#icon-burger"></use>
           </svg>
@@ -736,9 +736,9 @@
         </form>
       </div>
     </div>
-    <div class="burger-menu">
+    <div class="burger-menu js-menu-container" id="mobile-menu">
       <div class="burger-wrapper">
-        <button class="form-closing-sign" data-modal-close type="button">
+        <button class="form-closing-sign js-close-menu" type="button">
           <svg width="8" height="8" class="form-closing-sign-icon">
             <use href="./images/icons.svg#icon-close-sign"></use>
           </svg>
@@ -809,5 +809,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/backdrop.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
